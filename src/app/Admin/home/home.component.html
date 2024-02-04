@@ -1,0 +1,303 @@
+<pre></pre>
+<pre></pre>
+
+<div class="container mx-auto" style="border: 1px solid black;border-radius: 10px;height: 100px;">
+    <div class="row">
+        <div class="d-flex ">
+
+            <div class="px-3 mx-auto">
+                <pre></pre>
+                <a href="#" style="text-decoration: none; color: black;">
+                    <img src="https://cdn.igp.com/f_auto,q_auto,t_pnopt1prodlp/banners/new_arrival_plants_igp_tiles_20230325.png"
+                        alt="" style="height: 30px;">
+                    <pre></pre>
+                    <p style="margin-left: -20px;">New Arrivals</p>
+                </a>
+            </div>
+
+            <div class="vr " style="height: 100px;"></div>
+
+            <div class="px-3 mx-auto">
+                <pre></pre>
+                <img src="https://cdn.igp.com/f_auto,q_auto,t_pnopt1prodlp/banners/indoor_plants_igp_tiles_20230325.png"
+                    alt="" style="height: 30px;">
+                <pre></pre>
+                <p>Indoor Plants</p>
+            </div>
+
+            <div class="vr " style="height: 100px;"></div>
+
+            <div class="px-3 mx-auto">
+                <pre></pre>
+                <img src="https://cdn.igp.com/f_auto,q_auto,t_pnopt1prodlp/banners/outdoor_plants_igp_tiles_20230325.png"
+                    style="height: 30px;" alt="">
+                <pre></pre>
+                <p>Outdoor Plants</p>
+            </div>
+
+            <div class="vr " style="height: 100px;"></div>
+            <div class="px-3 mx-auto">
+                <pre></pre>
+                <img src="https://cdn.igp.com/f_auto,q_auto,t_pnopt1prodlp/banners/plants_with_quotes_plants_igp_tiles.png"
+                    style="height: 30px;" alt="">
+                <pre></pre>
+                <p>Customized Plants</p>
+            </div>
+
+            <div class="vr " style="height: 100px;"></div>
+            <div class="px-3 mx-auto">
+                <pre></pre>
+                <img src="https://cdn.igp.com/f_auto,q_auto,t_pnopt1prodlp/banners/all_plants_igp_tiles_20230325.png"
+                    style="height: 30px;" alt="">
+                <pre></pre>
+                <p>Shop All Plants</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<pre></pre>
+<pre></pre>
+<pre></pre>
+
+<!-- ------------------------------------------------------------------------------------------------- -->
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-sm-5">
+            <h1 style="font-weight: bolder;"> Bring The Beauty
+                <pre></pre> of Nature
+                <pre></pre> To Your Home
+            </h1>
+            <pre></pre>
+            <h2 style="font-weight: bolder;margin-left: -200px;">Flat 20% Discount</h2>
+            <button class="btn btn-outline-success" style="width: 200px;"> Shop Now </button>
+        </div>
+        <div class="col-sm-7">
+            <img src="assets/images/istockphoto-542304252-612x612.jpg" alt="image" style="width: 100%;
+           border-radius: 10px; height: 400px;">
+        </div>
+
+    </div>
+</div>
+
+<pre></pre>
+<pre></pre>
+<hr>
+
+<!-- -------------------------------------------------------------------------------------------------- -->
+
+<div class="container-fluid ">
+    <div class="product-list-wrapper mx-auto">
+
+        <h2 class="hr-lines"> Popular Products </h2>
+        <h6 class="text-muted"><b>Most Popular Curated for your special needs</b></h6>
+        <hr>
+        <div class="row ">
+            <div class=" col-sm-3 " *ngFor="let item of trendyProducts">
+                <div class="product-item ">
+                    <img src="{{item.image}}" alt="">
+                    <div class="product-details">
+                        <h6 class="name-head">{{item.name}}</h6>
+                        <div class="product-price">
+                            <h6>{{item.price | currency:"INR":"symbol"}}</h6>
+                        </div>
+                        <div class="product-desc">
+                            <p>{{item.description}}</p>
+                        </div>
+                        <div class="product-footer">
+                            <a routerLink="/product-details/{{item.id}}">View Details</a>
+                            <a href="/product-details/{{item.id}}"> Add to Cart</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <button class="btn btn-outline-success " style="margin-left: 350px;width: 300px;"> View All
+                Products</button>
+        </div>
+
+    </div>
+
+</div>
+
+<pre></pre>
+<pre></pre>
+<hr>
+
+<!-- --------------------------------------------------------------------------------------------------- -->
+
+<div class="container-fluid ">
+    <div class="product-list-wrapper mx-auto">
+        <h2 class="hr-lines"> Best Seller Products </h2>
+        <h6 class="text-muted"><b>Handpicked by Experts</b></h6>
+        <hr>
+        <div class="row ">
+            <div class=" col-sm-3 " *ngFor="let item of trendyProducts">
+                <div class="product-item ">
+                    <img src="{{item.image}}" alt="">
+                    <div class="product-details">
+                        <h6 class="name-head">{{item.name}}</h6>
+                        <div class="product-price">
+                            <h6>{{item.price | currency:"INR":"symbol"}}</h6>
+                        </div>
+                        <div class="product-desc">
+                            <p>{{item.description}}</p>
+                        </div>
+                        <div class="product-footer">
+                            <a routerLink="/product-details/{{item.id}}">View Details</a>
+                            <a href="/product-details/{{item.id}}"> Add to Cart</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <button class="btn btn-outline-success " style="margin-left: 350px;width: 300px;"> View All
+                Products</button>
+        </div>
+
+    </div>
+
+</div>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<hr>
+<pre></pre>
+
+<!-- --------------------------------------------------------------------------------------------- -->
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-5">
+            <a href="#">
+                <img src="assets/images/indoor_plants_igp_d_split_banner_20220726.jpg" alt=""
+                    style="height: 400px;width: 100%;margin-left: 30px;" />
+            </a>
+        </div>
+        <div class="col-sm-3">
+            <a href="#">
+                <img src="assets/images/outdoor_plants_igp_d_split_banner_20220726.jpg" alt=""
+                    style="height: 400px;width: 200%;margin-left: 100px;" />
+            </a>
+        </div>
+    </div>
+</div>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<hr>
+<pre></pre><pre></pre><pre></pre>
+
+<!-- ------------------------------------------------------------------------------------------ -->
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-6">
+            <img src="assets/images/istockphoto-690357282-612x612.jpg" alt="image"
+                style="width: 100%;height: 400px;border-radius: 10px;">
+        </div>
+        <div class="col-sm-6">
+            <h1 style="font-weight: bolder;margin-left: 20px;"> Who We Are...
+                <pre></pre>
+            </h1>
+
+            <p class="text-muted" style="margin-left: 20px;">Plants are one of the primary sources of life. Without
+                plants, several of our daily needs cannot be fulfilled. From food that we eat, the oxygen that we
+                breathe and the clothes that we wear to wood, paper, medicines and much more that come from plants.
+                With the need to increase awareness about the importance of plants,
+                online plant delivery has emerged as a wonderful solution.
+                Ordering plants online not only provides you with the comfort of shopping from home
+                but also gives you variety, the best quality, various offers, and choices in vases and planters.
+                With online plants delivery options like same-day and fixed-day delivery,
+                your favourite plant gifts get delivered to your doorstep.</p>
+
+        </div>
+
+
+    </div>
+</div>
+<hr>
+<!-- ------------------------------------------------------------------------------------------------- -->
+
+<div class="container mx-auto">
+    <h1 class="hr-lines2  "><b> What Customers are Saying...</b></h1>
+    <pre></pre>
+    <div class="row">
+        <div class="d-flex ">
+            <div class="px-4 mx-auto" style="margin-top: 60px;">
+
+                <figure>
+                    <blockquote class="blockquote mb-4">
+                        <p>
+                            <i class="bi bi-quote"></i><br>
+                            <span>It was exquisite plants and gifts</span>
+                        </p>
+                    </blockquote>
+
+                    <figcaption class="blockquote-footer">
+                        Tony Stark
+                    </figcaption>
+                </figure>
+
+            </div>
+            <div class="vr " style="height: 250px;width: 2px;"></div>
+            <div class="px-4 mx-auto" style="margin-top: 60px;">
+                <figure>
+                    <blockquote class="blockquote mb-4">
+                        <p>
+                            <i class="bi bi-quote"></i><br>
+                            <span>It was exquisite plants and gifts</span>
+                        </p>
+                    </blockquote>
+
+                    <figcaption class="blockquote-footer">
+                        Tony Stark
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="vr " style="height: 250px;width: 2px;"></div>
+            <div class="px-4 mx-auto" style="margin-top: 60px;">
+                <figure>
+                    <blockquote class="blockquote mb-4">
+                        <p>
+                            <i class="bi bi-quote"></i><br>
+                            <span>It was exquisite plants and gifts</span>
+                        </p>
+                    </blockquote>
+
+                    <figcaption class="blockquote-footer">
+                        Tony Stark
+                    </figcaption>
+                </figure>
+
+            </div>
+
+            <div class="vr " style="height: 250px;width: 2px;"></div>
+            <div class="px-4 mx-auto" style="margin-top: 60px;">
+                <figure>
+                    <blockquote class="blockquote mb-4">
+                        <p>
+                            <i class="bi bi-quote"></i><br>
+                            <span>It was exquisite plants and gifts</span>
+                        </p>
+                    </blockquote>
+
+                    <figcaption class="blockquote-footer">
+                        Tony Stark
+                    </figcaption>
+                </figure>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<!-- --------------------------------------------------------------------------------------------------->

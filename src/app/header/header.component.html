@@ -1,0 +1,45 @@
+<nav class="nav fixed-top bg-light">
+  <h1><a routerLink="home"> iNursery</a></h1>
+
+     <div [ngSwitch]="menuType">
+    <ul *ngSwitchCase="'default'" >
+      <li><a routerLink="admin-auth">Admin</a></li>
+      <li><a routerLink="home"><i class="bi bi-house-door-fill"></i> </a></li>
+      <li><a routerLink="user-auth"><i class="bi bi-person"></i></a></li>
+      <li><a href="cart"><i class="bi bi-cart4"></i> ({{cartItems}})</a></li>
+    </ul>
+    <ul *ngSwitchCase="'admin'">
+    <li><a routerLink="admin-auth">Product List</a></li>
+    <li><a routerLink="admin-add-product">Add Product</a></li>
+    <li><a (click)="logout()"><i class="bi bi-power"></i> </a></li>
+    <li><a href="#"><i class="bi bi-person-fill"></i> {{adminName | titlecase}}</a></li>
+  </ul>
+  <ul *ngSwitchCase="'user'">
+    <li><a routerLink="home"><i class="bi bi-house-door-fill"></i> </a></li>
+    <li><a routerLink="my-orders"><i class="bi bi-list-check"></i></a></li>
+    <li><a href="cart"><i class="bi bi-cart4"></i>({{cartItems}})</a></li>
+    <li><a (click)="userlogout()"><i class="bi bi-power"></i></a></li>
+    <li><a href="#"><i class="bi bi-person-fill"></i> {{userName | titlecase}}</a></li>
+  </ul>
+    </div>
+</nav>
+<pre></pre><pre></pre>
+
+<div *ngIf="menuType!=='admin'" class="nav-search">
+  <input type="text" class="form-control py-2 rounded-pill mr-1 pr-5"
+  #searchInput
+  (keyup)="searchProduct($event)" (blur)="hideSearch()" placeholder="Search Products" />
+  <button (click)="submitSearch(searchInput.value)" class="btn btn-outline-success" ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+    class="bi bi-search" viewBox="0 0 16 16">
+     <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+   </svg></button>
+
+  <ul class="suggested-search" *ngIf="searchResult">
+      <li *ngFor="let item of searchResult">
+        <a (mousedown)="redirectToDetails(item.id)" >{{item.name}}</a>
+      </li>
+    </ul>
+  
+</div>
+<pre></pre>
+            

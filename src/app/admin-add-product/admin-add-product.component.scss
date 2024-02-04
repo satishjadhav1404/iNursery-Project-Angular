@@ -1,0 +1,36 @@
+.add-product{
+    margin-bottom: 100px;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.common-form{
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+    margin: auto;
+    width: 300px;
+}
+.form-input{
+    justify-content: center;
+    text-align: center;
+    height: 35px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    border: 1px solid blue;
+    color: blue;
+}
+.form-button{
+    height: 35px;
+    border: 1px solid blue;
+    cursor: pointer;
+}
+
+h1{
+    color: green($color: #000000);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.add-product{
+    text-align: center;
+}

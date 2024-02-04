@@ -1,0 +1,38 @@
+<div class="admin-auth">
+
+    <div *ngIf="showLogin" class="signUp">
+        <h1>Admin sign-up</h1>
+        <form #adminSignUp="ngForm" (ngSubmit)="signUp(adminSignUp.value)" class="common-form">
+            <input type="text" class="form-input" placeholder="Enter Name" name="name" ngModel />
+            <input type="text" class="form-input" placeholder="Enter Email" name="email" ngModel />
+            <input type="password" class="form-input" placeholder="Enter Password" name="password" ngModel />
+            <button class="form-button btn btn-primary">Sign Up</button>
+         <p>Already have account? <a class="auth-toggle-link" (click)="openLogin()">click for Login
+            </a>
+         </p>   
+               
+           
+        </form>
+    </div>
+
+    <div *ngIf="!showLogin" class="login">
+        <h1>Admin Login</h1>
+        <p class="error-p">{{authError}}</p>
+
+        <form #adminLogin="ngForm" (ngSubmit)="login(adminLogin.value)" class="common-form">
+            <input type="text" class="form-input" autocomplete="off" placeholder="Enter Email"
+             name="email" ngModel #email="ngModel" required />
+ <p class="invalid-input"><span *ngIf ="email.invalid && email.touched"> please enter valid input</span></p>
+
+ <input type="password" class="form-input" placeholder="Enter Password" name="password" ngModel 
+ #password="ngModel" required />
+ <p class="invalid-input"><span *ngIf ="password.invalid && password.touched"> please enter valid input</span></p>
+
+ <button class="form-button btn btn-primary">Login</button>
+<p> Don't have account? 
+    <a class="auth-toggle-link" (click)="openSignUp()"> click for sign-up</a>
+</p>
+        </form>
+    </div>
+
+</div>

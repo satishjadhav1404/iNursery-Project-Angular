@@ -1,0 +1,38 @@
+
+<div class="container-fluid">
+
+<div class="cart-page">
+    <h1> Cart </h1>
+    <pre></pre>
+
+    <div class="row">
+
+        <div class="col-sm-7 details">
+            <ul *ngFor="let cart of cartData">
+                <li><img src="{{cart.image}}" alt=""></li>
+                <li><span> {{cart.name}}</span></li>
+                <li><span> Price : {{cart.price | currency:"INR":"symbol"}}</span></li>
+                <li><span> Quantity : {{cart.quantity}}</span></li>
+                <li><button class="form-button btn btn-outline-danger" (click)="removeToCart(cart.id)">
+                    Remove </button></li>
+            </ul>
+           
+        </div>
+        <div class="col-sm-4 summary">      
+            <ul>    
+                 <h3> Order Summary</h3><pre></pre>
+             
+                <li> <span>Amount:</span><span>{{priceSummary.price | currency:"INR":"symbol"}}</span></li>
+                <li> <span>Tax:</span><span>{{priceSummary.tax | currency:"INR":"symbol"}}</span></li>
+                <li> <span>Delivery:</span><span>{{priceSummary.delivery | currency:"INR":"symbol"}}</span></li>
+                <li> <span>Discount:</span><span>{{priceSummary.discount | currency:"INR":"symbol"}}</span></li><br><br>
+                <li> <span><h4>Total</h4></span>
+                     <span><h4>{{priceSummary.total | currency:"INR":"symbol"}}</h4></span></li>
+            </ul>
+            <pre></pre>
+            <button (click)="checkout()" class="form-button btn btn-outline-success max-width">Checkout</button>
+
+        </div>
+    </div>
+</div>
+</div>

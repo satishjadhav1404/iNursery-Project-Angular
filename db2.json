@@ -1,0 +1,111 @@
+{
+  "admin": [
+    {
+      "name": "Ronaldo",
+      "email": "cr7@gmail.com",
+      "password": "cr@7",
+      "id": "3"
+    }
+  ],
+  "users": [
+    {
+      "name": "Rumy",
+      "email": "rumythepoet@1102",
+      "password": "rumy@1102",
+      "id": "2"
+    }
+  ],
+  "products": [
+    {
+      "name": "Orchid",
+      "price": "400",
+      "category": "flower",
+      "description": "Interior looking beautiful",
+      "image": "assets/images/orchid.jpg",
+      "id": "1"
+    },
+    {
+      "name": "African Daisy",
+      "price": "200",
+      "category": "flower",
+      "description": "african daisy flower",
+      "image": "assets/images/african daisy.jpg",
+      "id": "2"
+    },
+    {
+      "name": "Bamboo",
+      "price": "120",
+      "category": "Interior",
+      "color": "green",
+      "description": "Useful for home decor",
+      "image": "assets/images/bamboo.jpg",
+      "id": "3"
+    },
+    {
+      "name": "Almond",
+      "price": "300",
+      "category": "Nuts",
+      "description": "edible fruit and nut",
+      "image": "assets/images/almond tree.jpg",
+      "id": "4"
+    },
+    {
+      "name": "Rose",
+      "price": "50",
+      "category": "Flower",
+      "description": "Fragrance",
+      "image": "assets/images/rose.jpg",
+      "id": "5"
+    },
+    {
+      "name": "lotus",
+      "price": "150",
+      "category": "Flower",
+      "description": "Fragrance",
+      "image": "assets/images/lotus.jpg",
+      "id": "6"
+    },
+    {
+      "name": "Lavender",
+      "price": "120",
+      "category": "Flower",
+      "description": "Fragrance and decor",
+      "image": "assets/images/lavender.jpg",
+      "id": "7"
+    },
+    {
+      "name": "cactus",
+      "price": "250",
+      "category": "herb",
+      "description": "Interior",
+      "image": "assets/images/cactus.jpg",
+      "id": "8"
+    },
+    {
+      "name": "Madonna Lily",
+      "price": "180",
+      "category": "flower",
+      "description": "Fragrance with decor",
+      "image": "assets/images/maddona-lilly.jpg",
+      "id": "9"
+    },
+    {
+      "name": "Palm",
+      "price": "80",
+      "category": "Tree",
+      "description": "interior",
+      "image": "assets/images/palm.jpg",
+      "id": "10"
+    },
+    {
+      "name": "oscar",
+      "price": "4332",
+      "category": "flower",
+      "description": "its flower",
+      "image": "iNursery/src/assets/images/anise.jpg",
+      "id": "11"
+    }
+  ],
+  "cart": [],
+  "orders": []
+}
